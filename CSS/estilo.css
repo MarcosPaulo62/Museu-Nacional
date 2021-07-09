@@ -16,6 +16,14 @@ li{
     list-style: none;
 }
 
+input{
+    height: 20px;
+    background: #fff;
+    border: none;
+    width: 90px;
+    font-size: 1.1em;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -30,20 +38,24 @@ li{
 --------------------------*/
 header{
     display: flex;
+    margin-bottom: 10px;
 }
 
 header h1{
     width: 248px;
-    height: 21px;
     background: url(../img/logo.png) no-repeat;
     text-indent: -9999px;
     margin-top: 30px;
 }
 
+header h1 a{
+    display: block;
+}
+
 header nav{
     display: flex;
     align-items: center;
-    margin-left: 20%;
+    margin-left: 24%;
     margin-top: 10px;
 }
 
@@ -56,4 +68,81 @@ header nav ul li{
 
 header nav ul li a:hover{
     border-bottom: 1px solid #535858;
+}
+
+/* Principal
+-------------------*/
+#conteudo{
+    width: 710px;
+    float: left;
+    background: #af670a;
+}
+
+
+/*Barra lateral*/
+aside{
+    width: 350px;
+    float: right;
+    background: #ebe7dd;
+    padding-bottom: 30px;
+}
+
+/*Faça uma visita*/
+section#visita{
+    background: #cdc8b1;
+    padding: 10px 27px 27px 27px;
+    margin-top: 10px;
+}
+
+section#visita h4,
+section#galeria h4{
+    font-size: 1.2em;
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+}
+
+section#visita #dados{
+    padding: 10px;
+}
+
+section#visita #qtd-pessoas{
+    width: 3em;
+}
+
+#disponibilidade{
+    color: #fff;
+    background: #9b9271;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+}
+
+input.campo{
+    border: 1px solid #ada484;
+}
+
+legend{
+    display: none;
+}
+fieldset{
+    border: none;
+}
+
+/*Galeria de fotos*/
+section#galeria{
+    padding: 20px 27px 0 27px;
+}
+
+section#galeria a{
+    display: block;
+    background: url(../img/fundo-foto.png) no-repeat;
+    float: left;
+    margin: 10px 0 0 20px;
+    padding: 16px 15px 18px 15px;
+}
+
+section#galeria img{
+    margin-top: 2px;
+    margin-left: 3px;
 }
