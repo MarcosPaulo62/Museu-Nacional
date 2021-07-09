@@ -1,0 +1,59 @@
+body{
+    background: #f4f2ed url(../img/fundo.png) repeat-x;
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+a:link, a:active, a:visited{
+    text-decoration: none;
+    color: #af670a;
+}
+
+a:hover{
+    color: #227115;
+}
+
+li{
+    list-style: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    margin: 0 auto;
+    width: 1080px;
+}
+
+/* Cabeçalho
+--------------------------*/
+header{
+    display: flex;
+}
+
+header h1{
+    width: 248px;
+    height: 21px;
+    background: url(../img/logo.png) no-repeat;
+    text-indent: -9999px;
+    margin-top: 30px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+header nav ul li{
+    display: inline;
+    margin-right: 25px;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+}
+
+header nav ul li a:hover{
+    border-bottom: 1px solid #535858;
+}
